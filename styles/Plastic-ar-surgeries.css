@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+.surgeries{
+  background-image: url('../images/Combined\ Shape.png') ;
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */;
+}
+@media(max-width:776px){
+  .surgeries{
+    height: 250px;
+  }
+.logos{
+  margin-top: 15px;
+}
+}
+.navOptions{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin:0 30px;
+}
+@media(max-width:776px){
+  .navOptions{
+    flex-direction: column;
+  }
+}
+.navOptions .logo{
+  width:250px;
+  height: 55px;
+}
+.languages span{
+font-size: 18px;
+}
+
+.surgeries-background .row{
+  background-image: url('../images/Clinic1.png') ;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */ ;
+  margin-top: -30%;
+}
+@media(max-width:776px){
+  .surgeries-background .row{
+    margin-top: -28%;
+  }
+}
+.showForm{
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding:10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-family: GE SS Two Bold;
+  margin:3rem;
+}
+@media (max-width:776px){
+  .showForm{
+  margin:0;
+  padding-top: 0;
+}
+}
+.lead{
+  text-align: right;
+  font-weight: bold;
+  font-size: 19px;
+  color:#333;
+  margin-top: 3rem;
+}
+
+
+.label{
+  text-align: right;
+  font-weight: bold;
+  color:#333;
+}
+a,a:hover{
+  color:#fff;
+  text-decoration: none;
+}
+.textInput{
+  text-align: right;
+}
+.textInput:focus{
+  border:1px solid #9E699E;
+  outline: none;
+}
+.selectNationality,.selectCity{
+background-color: #FFF;
+}
+.selectNationality:focus,.selectCity:focus{
+  outline: none;
+  border:1px solid #9E699E;
+}
+.dropdown-menu{
+  width: 63%;
+}
+.fa-chevron-down{
+display: flex;
+font-size: 24px;
+color: #9E699E;
+}
+.submitButton{
+  background: linear-gradient(129.15deg, #6E69A7 0%, #9E699E 100%);
+  color:#fff;
+}
+.textInput,.submitButton,.selectNationality,.selectCity{
+  border-radius: 33px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 12px;
+  border: none;
+}
+.description{
+  font-family: GE SS Two ;
+  position: absolute;
+  bottom: 15px;
+}
+@media (max-width:676px){
+  .description{
+  position: relative;
+  width: 170%;
+  }
+}
+.description .lead{
+  font-weight: bold;
+  font-size:24px;
+}
+.footer{
+  background: linear-gradient(129.15deg, #6E69A7 0%, #9E699E 100%);
+  /* right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  position: absolute; */
+}
+@media(max-width:776px){
+  .footer{
+    flex-direction: column;
+    text-align: center;
+    font-family: GE SS Two ;
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+  }
+  .copyright span{
+    margin-right: 0;
+  }
+}
+
